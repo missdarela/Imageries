@@ -4,11 +4,6 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Imageries</title>
-	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" 
-	integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" 
-	crossorigin="anonymous" referrerpolicy="no-referrer" />	
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css" integrity="sha512-1cK78a1o+ht2JcaW6g8OXYwqpev9+6GqOkz9xmBN9iUUhIndKtxwILGWYOSibOKjLsEdjyjZvYDq/cZwNeak0w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
 
   <body class="flex justify-center items-center">
@@ -32,19 +27,30 @@
 
         <!-- -----------------images------------------ -->
         <div class="md:flex hidden w-full justify-between mt-20">
-          <img src="images/g2.png" alt="" width="200px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" />
-          <img src="images/g1.png" alt="" width="500px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" />
-          <img
-            src="images/g4.png"
-            alt=""
-            width="350px"
-            class="object-cover z-10"
-            data-aos="fade-right" data-aos-duration="1000"
-          />
-          <img src="images/g3.png" alt="" width="200px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" />
-        </div>
-      </main>
-    </div>
+    
+    <section class="splide" aria-label="Splide Basic HTML Example">
+      <div class="splide__track bg-black">
+        <ul class="splide__list">
+          <li class="splide__slide">          
+            <img src="images/g2.png" alt="" width="200px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" /></li>
+          <li class="splide__slide">
+            <img src="images/g1.png" alt="" width="500px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" />
+          </li>
+          <li class="splide__slide">
+            <img
+              src="images/g4.png"
+              alt=""
+              width="350px"
+              class="object-cover z-10"
+              data-aos="fade-right" data-aos-duration="1000"
+            /></li>
+            <li class="splide__slide"><img src="images/g3.png" alt="" width="200px" class="object-cover" data-aos="fade-right" data-aos-duration="1000" /></li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>
+</div>
     <!-- -----------------Section 2------------------ -->
     <section class="pt-16 bg-[#f7f7ff] py-16 md:mx-0 px-8">
       <div class="text-center">
@@ -66,6 +72,7 @@
     <section id="gallery" class="pt-16 pb-16 bg-[#ffb56e]">
       <h3 class="text-4xl text-white text-center" data-aos="fade-up" data-aos-duration="1000">Explore Imageries</h3>
       <div class="md:grid md:grid-cols-3 md:gap-x-8 px-6  ml-30 pt-16 justify-center">
+        
         <div class="md:mt-0 mt-10">
           <img
             src="images/grid5.jpg"
@@ -183,12 +190,11 @@
 			</div>
       <p class="text-white md:py-3 py-4 text-center">© 2024 Imageries. All rights reserved.</p>
     </footer>
+
 		</section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-      AOS.init();
-    </script>
+
+    
     <script type="module" src="main.js"></script>
   </body>
 </html>
